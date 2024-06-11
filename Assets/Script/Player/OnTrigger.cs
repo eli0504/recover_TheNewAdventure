@@ -127,14 +127,14 @@ public class OnTrigger : MonoBehaviour
         //PowerUp
         if (other.gameObject.tag == "smallPowerUp")
         {
-            playerScript.Flip();
+            //playerScript.Flip();
             Destroy(other.gameObject);
             audioLibrary.PlaySound("poison");
             transform.localScale = new Vector3(smallPowerUp, smallPowerUp, 0);
         }
         else if (other.gameObject.tag == "bigPowerUp")
         {
-            playerScript.Flip();
+           // playerScript.Flip();
             Destroy(other.gameObject);
             audioLibrary.PlaySound("poison");
             transform.localScale = new Vector3(bigPowerUp, bigPowerUp, 0);
